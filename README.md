@@ -12,7 +12,7 @@ Leiningen dependency information:
 [org.clojure/algo.graph "x.y.z"]
 
 ...
-; for very recent releases
+; to include SNAPSHOT releases
 :repositories {"sonatype-oss-public" "https://oss.sonatype.org/content/groups/public/"}
 ```
 
@@ -42,6 +42,7 @@ The default jars contain AOT files for faster loading.
 ## Contributors
 
 * Jeffrey Straszheim
+* Tim Baldridge
 
 ## License
 
