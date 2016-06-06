@@ -2,8 +2,7 @@
  ({:doc "Basic graph theory algorithms",
    :author "Jeffrey Straszheim",
    :name "clojure.algo.graph",
-   :wiki-url
-   "http://clojure.github.io/algo.graph/clojure.algo.graph-api.html",
+   :wiki-url "http://clojure.github.io/algo.graph/index.html",
    :source-url
    "https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj"}),
  :vars
