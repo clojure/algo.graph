@@ -96,6 +96,9 @@ namespace.
       <a href="#clojure.algo.graph/transitive-closure" class="toc-entry-anchor">transitive-closure</a>
       
     </div>
+  </div><div class="toc-section" style="margin-left: 1em;">
+    <a style="margin-top: 3px;" href="#"></a>
+    
   </div>
 </div>
 </div>
@@ -125,6 +128,7 @@ namespace.
     <pre id="var-usage">Usage: (add-loops g)
 </pre>
     <pre id="var-docstr">For each node n, add the edge n-&gt;n if not already present.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L49">Source</a>
@@ -140,6 +144,7 @@ namespace.
 Each node in the new graph will be a set of nodes from the old.
 These sets are the strongly connected components.  Each edge will
 be the union of the corresponding edges of the prior graph.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L133">Source</a>
@@ -155,6 +160,7 @@ set of nodes at index 0 are independent.  The set at index 1 depend
 on index 0; those at 2 depend on 0 and 1, and so on.  Those withing
 a set have no mutual dependencies.  Assume the input graph (which
 much be acyclic) has an edge a-&gt;b when a depends on b.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L190">Source</a>
@@ -168,6 +174,7 @@ much be acyclic) has an edge a-&gt;b when a depends on b.</pre>
     <pre id="var-docstr">Repeatedly apply fun to data until (equal old-data new-data)
 returns true.  If max iterations occur, it will throw an
 exception.  Set max to nil for unlimited iterations.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L167">Source</a>
@@ -179,6 +186,7 @@ exception.  Set max to nil for unlimited iterations.</pre>
     <pre id="var-usage">Usage: (get-neighbors g n)
 </pre>
     <pre id="var-docstr">Get the neighbors of a node.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L29">Source</a>
@@ -193,6 +201,7 @@ exception.  Set max to nil for unlimited iterations.</pre>
     <pre id="var-docstr">Return a lazy sequence of the nodes of a graph starting a node n.  Optionally,
 provide a set of visited notes (v) and a collection of nodes to
 visit (ns).</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L68">Source</a>
@@ -204,6 +213,7 @@ visit (ns).</pre>
     <pre id="var-usage">Usage: (post-ordered-nodes g)
 </pre>
     <pre id="var-docstr">Return a sequence of indexes of a post-ordered walk of the graph.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L110">Source</a>
@@ -215,6 +225,7 @@ visit (ns).</pre>
     <pre id="var-usage">Usage: (recursive-component? g ns)
 </pre>
     <pre id="var-docstr">Is the component (recieved from scc) self recursive?</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L151">Source</a>
@@ -226,6 +237,7 @@ visit (ns).</pre>
     <pre id="var-usage">Usage: (remove-loops g)
 </pre>
     <pre id="var-docstr">For each node n, remove any edges n-&gt;n.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L57">Source</a>
@@ -238,6 +250,7 @@ visit (ns).</pre>
 </pre>
     <pre id="var-docstr">Given a directed graph, return another directed graph with the
 order of the edges reversed.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L37">Source</a>
@@ -250,6 +263,7 @@ order of the edges reversed.</pre>
 </pre>
     <pre id="var-docstr">Returns, as a sequence of sets, the strongly connected components
 of g.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L117">Source</a>
@@ -262,6 +276,7 @@ of g.</pre>
 </pre>
     <pre id="var-docstr">Returns, as a sequence of sets, the components of a graph that are
 self-recursive.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L158">Source</a>
@@ -277,6 +292,7 @@ provided.  The first is as dependency-list.  The second (which may
 have cycles) provides a partial-dependency relation.  If node a
 depends on node b (meaning an edge a-&gt;b exists) in the second
 graph, node a must be equal or later in the sequence.</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L207">Source</a>
@@ -294,6 +310,7 @@ regardless of whether such loops exist in the original graph.  This
 version does not.  Loops will be included only if produced by
 cycles in the graph.  If you have code that depends on such
 behavior, call (-&gt; g transitive-closure add-loops)</pre>
+    <pre id="var-specs"></pre>
     
     
     <a id="var-source" href="https://github.com/clojure/algo.graph/blob/03c740c61aecb55225bdad19813e316f44837142/src/main/clojure/clojure/algo/graph.clj#L81">Source</a>
