@@ -2,31 +2,11 @@
 
 Basic graph theory algorithms.
 
+# THIS PROJECT IS NO LONGER ACTIVE
+
 ## Releases and Dependency Information
 
-Latest stable release is <no release yet>.
-
-Leiningen dependency information:
-
-```clojure
-[org.clojure/algo.graph "x.y.z"]
-
-...
-; to include SNAPSHOT releases
-:repositories {"sonatype-oss-public" "https://oss.sonatype.org/content/groups/public/"}
-```
-
-Maven dependency information:
-
-```XML
-<dependency>
-  <groupId>org.clojure</groupId>
-  <artifactId>algo.graph</artifactId>
-  <version>x.y.z</version>
-</dependency>
-```
-
-The default jars contain AOT files for faster loading. 
+This project should be considered abandoned. No release was ever made.
 
 ## Documentation
 
